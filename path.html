@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maxim</title>
+    <link rel="stylesheet" href="/Css/reset.css">
+    <link rel="stylesheet" href="/Css/responsive.css">
+    <link rel="stylesheet" href="/Css/Style.css">
+</head>
+<body>
+
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Crypto Countdown Timer</title>
+      <style>
+        body {
+          font-family: Arial, sans-serif;
+          text-align: center;
+        }
+        #countdown {
+          font-size: 2em;
+          margin-top: 50px;
+        }
+      </style>
+    </head>
+    <body>
+      <h1>Crypto ICO Countdown Timer</h1>
+      <div id="countdown">00:00:00</div>
+    
+      <script>
+        // Set the date for the countdown (replace with your own date)
+        const countdownDate = new Date('2024-12-31T00:00:00').getTime();
+    
+        const countdownElement = document.getElementById('countdown');
+    
+        // Update the countdown every second
+        const countdownInterval = setInterval(() => {
+          const now = new Date().getTime();
+          const distance = countdownDate - now;
+    
+          // Calculations for days, hours, minutes, and seconds
+          const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+          // Display the countdown
+          countdownElement.innerHTML = `${days.toString().padStart(2, '0')}:${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+    
+          // If the countdown is finished, display a message
+          if (distance < 0) {
+            clearInterval(countdownInterval);
+            countdownElement.innerHTML = 'ICO Has Ended!';
+          }
+
+
+
+          <nav class="nav flex container">
+            <a href="#" class="nav__logo">
+                
+            </a>
+
+            <div id="nav__menu" class="nav__menu">
+                <ul class="nav__menu-list flex">
+                    
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Story</a></li>
+                    <li><a href="#">Roadmap</a></li>
+    
+
+                    <li><a href="#">ENG</a></li>
+                    <li><a href="#" class="btn btn--cyan">Invest now</a></li>
+                    <li><img src="/img/Frame 3286 (1).png" alt=""></li>
+
+        }, 1000);
+      </script>
+    </body>
+    </html>
+    
+</body>
+</html>
