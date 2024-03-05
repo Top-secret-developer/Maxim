@@ -2,9 +2,14 @@
     .toggle_menu{
         display: block;
         font-size: 3.0rem;
-        color: var(--gray);
+        color: white;
+    
+        margin-left: 7em;
     }
-
+    .toggle_menu > img{
+        background-color: white;
+        color:azure;
+    }
     .nav{
         justify-content: space-between;
         
@@ -27,19 +32,21 @@
 
     .nav_open{
         padding: 6em 2em;
-        background-color: var(--dark-violet);
-        width: 90%;
+        background-color:  #18152A;;
+        width: 100%;
         top: 6em;
         border-radius: .8em;
+        
+
     }
 
     .nav_open>.nav__menu-list{
         flex-direction: column;
+        margin-left: .5em;
     }
 
-    .nav_open>.nav__menu-list > li:nth-child(4){
-        margin-left: 0;
-        position: relative;
+    .nav_open>.nav__menu-list > a:nth-child(1){
+        
     }
 
     .nav_open>.nav__menu-list > li:nth-child(4)::before{
@@ -51,18 +58,18 @@
         height: .3px;
         background-color: var(--white);
     }
-    .nav_open>.nav__menu-list > li{
+    .nav_open>.nav__menu-list > a{
         width: 100%;
         text-align: center;
     }
 
-    .nav_open>.nav__menu-list > li> a{
+    .nav_open>.nav__menu-list > a{
         font-size: 1.8rem;
         color: var(--white);
     }
 
     .grid-2, .grid-3, .grid-5, .search-box > .grid-2{
-        grid-template-columns: 1fr;
+        grid-template-columns: fr;
     }
     .search-box > .grid-2{
         gap: .2em;
@@ -72,14 +79,7 @@
         text-align: center;
     }
 
-    .card:nth-child(1)::after, .card:nth-child(2)::before{
-        height: 100%;
-        width: .7em;
-        top: 100%;
-        left:50%;
-        transform: translateX(-50%);
-    }
-
+    
     
     
     .card{
@@ -99,31 +99,55 @@
         background-position:bottom right ;
     }
 
-    .search-box > .grid-2  a{
+    .search-box > .grid a{
         display: block;
         width: 100%;
         text-align: center;
     }
 
     .hero .grid-2{
-        grid-template-areas: "picture" "text";
         text-align: center;
         gap: .4em;
+        display: flex;
+        flex-direction: column;
+    
     }
 
     .hero__detail{
         grid-area: text;
+        margin-bottom: 16em;
+        
+    }
+    .card-wrapper .cart{
+        display: n;
+        margin-bottom: 4em;
+        align-items:center ;
+        justify-content: center;
+        margin-right: 5em;
+        height: 30vh;
+        width: 45vw;
+
     }
 
-    .hero__detail > p{
+    .card-wrapper .cart > img {
+        display: hidden;
+    }
+.hero__detail > p{
+    margin-left: 5em;
+}
+
+.card-wrapper > img{
+    display: none;
+}
+    .hero__detail > {
         max-width: 100%;
-        margin-top: 0.8em;
-        margin-bottom: 2.2em;
+        margin-bottom: 2em;
     }
 
     .hero_image{
         grid-area: picture;
     }
+    .card-w
 
 }
 
