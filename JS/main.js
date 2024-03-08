@@ -1,7 +1,7 @@
 
                                                                                                                                                                                      
 
-    var countdownDate = new Date("march 06 2024 00:00:00").getTime();
+    var countdownDate = new Date("march 14 2024 00:00:00").getTime();
 
     // Update the countdown every second
     var countdownInterval = setInterval(() => {

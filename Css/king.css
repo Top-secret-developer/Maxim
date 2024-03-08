@@ -54,12 +54,8 @@
     align-items: center;
 }
 .ground{
-    width: 46.5%;
-    height: 10%;
-    background-color: #141414;
-    position:absolute;
-    left: 22.8em;
-    top: 8.9em;
+    width: 5%;
+
     color: white;
     
 }
@@ -70,6 +66,13 @@
 }
 .search{
     margin-top: 3em;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left:  ;
+    flex-direction: column;
     
 }
 
@@ -78,19 +81,18 @@
     border-radius: 1em;
     background-color: #141414;
     border: none;
-    position: relative;
-    margin-left: 3em;
+    margin-left: 20em;
+    
 
 }
 
 .search > input:nth-child(1) {
-    position: absolute;
-    left: 27em;
+   
 }
 
 .search > input:nth-child(3){
-    position: absolute;
-    right: 30em;
+    
+    margin-right: 8em;
 }
 .Invest{
     margin-top: 2.5em;
@@ -105,9 +107,28 @@
     width: 2em;
     background-color: #141414;
     border-radius: 100%;
-    align-content: ;
-    justify-content: ;
+    align-content: center;
+    justify-content: center;
 }
+.confine{
+    width: 10
+   
+    
+}
+.confine > input{
+    padding: 1em;
+    border-radius: 1em;
+    background-color: #141414;
+    border: none;
+    margin-top: 1em;
+    
+
+}
+
+
+
+
+
 
     
 
