@@ -36,13 +36,14 @@
         width: 100%;
         top: 6em;
         border-radius: .8em;
+        margin-left: 2
         
 
     }
 
     .nav_open>.nav__menu-list{
         flex-direction: column;
-        margin-left: .5em;
+        margin-left: 5em;
     }
 
     .nav_open>.nav__menu-list > a:nth-child(1){
@@ -133,7 +134,7 @@
 
         
         
-        margin-right: 3em;
+        margin-right: 3.5em;
         height: 40%;
         width: 50%;
         
