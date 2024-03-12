@@ -114,11 +114,14 @@ header{
    z-index: 1000;
    background-color: #141421;
 
+
 }
 
 .nav{
     justify-content: flex-start;
     gap: 1.8em;
+    height: 4vh;
+
 
 }
 .box{
@@ -153,13 +156,15 @@ header{
 .nav__menu{
     width: 100%;
     transition: .3s;
+
+
 }
 
 .nav__menu-list{
     gap: 1.8em;
     width: 70%;
     flex: 1;
-    margin-left: 12em;
+    margin-left: 13em;
 
 }
  
@@ -176,8 +181,16 @@ header{
 }
 
 .toggle_menu{
-    display: ;
+    display: none;
     background-color: #18152A;
+}
+@media(max-width:20000px){
+    .toggle_menu{
+        display:block;
+        left: 10em;
+        
+
+    }
 }
 
 .search-box > div:nth-child(1){
@@ -252,7 +265,8 @@ header{
     background-size: cover;
     background-position:right bottom ;
     background-repeat: no-repeat;
-    height: 20%;
+    height: 10vh;
+    margin-top: 20em;
     
 }
 
@@ -296,35 +310,30 @@ header{
 
 
 .card-wrapper{
-    padding-bottom: 2em;}
+    bac;
+}
 
 .card-wrapper > img{
     position: absolute;
     right: 2em;
-    width: 30%;
+    width: 35%;
     height: 50%;
 
 }
 
-.card{
-    width: 50%;
-    background-color: black;
-    border-radius: .4em;
-    position: relative;
-    padding: 1.5em;
-    height: 10rem;
-    margin-left: 30%;
-}
+
+
 
 
 .cart{
     height: 50vh;
-    width: 34vw;
+    width: 37vw;
     background-color:#1F1D30;
-    border-radius: 2em;
-    position: absolute;
-    right: 5em;
-    bottom: 5em;
+    border-radius: 1em;
+    position: relative;
+    top: 5em;
+    
+
 
 }
 
@@ -460,7 +469,7 @@ header{
 }
 
 .problem{
-    height: 50%;
+    height: 30%;
     width: 100%;
     
 }
@@ -484,4 +493,18 @@ header{
     color: #7B5AA1;
     margin-bottom: 5em;
     justify-content: center;
+}
+
+
+.Private{
+
+    width: 100%;
+    height: 5rem;
+    text-align: center;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.0419999993);
+
 }

@@ -1,6 +1,6 @@
-@media(max-width: 550px){
+@media(max-width: 600px){
     .toggle_menu{
-        display: block;
+        display: inline-block;
         font-size: 3.0rem;
         color: white;
     
@@ -9,6 +9,7 @@
     .toggle_menu > img{
         background-color: white;
         color:azure;
+        display: flex;
     }
     .nav{
         justify-content: space-between;
@@ -69,11 +70,10 @@
         color: var(--white);
     }
 
-    .grid-2, .grid-3, .grid-5, .search-box > .grid-2{
-        grid-template-columns: fr;
+     .search-box > .grid-2{
+        grid-template-columns: 1fr;
     }
     .search-box > .grid-2{
-        gap: .2em;
       
     }
     .grid-5{
@@ -109,34 +109,48 @@
 
     .hero .grid-2{
         text-align: center;
-        gap: 5em;
-        display: grid;
         justify-content: center;
-        grid-template-columns: repeat(1, 1fr);
-        width: 100%;
+        grid-template-columns:  1fr;
+    
         
 
     
     }
 
-    .hero__detail{
-        grid-area: 
-        
-    
-        
+    .hero__detail .Invest{
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
     }
-    
-.search-box{
 
+.hero__detail{
+    margin-top: 12em;
 }
+
+    
+ .search-box{
+   margin-top: em;
+    background-color: red;
+    height: 10%;
+
+   }
+.card-wrapper{
+    height: 100vh;
+    justify-content: center;
+}
+
 
     .card-wrapper .cart{
 
         
+        position: relative;
         
-        margin-right: 3.5em;
-        height: 40%;
-        width: 50%;
+        top: 1em;
+        left: 20%;
+        height: 35vh;
+        width: 60%;
+        align-content: center;
+        justify-content: center;
         
 
     }
@@ -163,6 +177,10 @@
 
     .hero_image{
 
+    }
+
+    .card-wrapper .cart .Invest{
+        background-color: red;
     }
     
 
