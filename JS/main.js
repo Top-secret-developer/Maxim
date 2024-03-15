@@ -39,3 +39,15 @@ const openMenu = () => {
         menuContainer.classList.add("nav_open");
     }
 }
+
+
+
+ var container = document.getElementById('popup')
+
+ function openPopup(){
+  container.classList.add('open-popup')
+ }
+
+ function closePopup(){
+  container.classList.remove('open-popup')
+ }
