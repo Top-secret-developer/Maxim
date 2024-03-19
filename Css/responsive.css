@@ -1,4 +1,4 @@
-@media(max-width: 600px){
+@media(max-width: 500px){
     .toggle_menu{
         display:block;
         font-size: 3.0rem;
@@ -144,7 +144,7 @@
     }
 
 .hero__detail{
-    margin-top: 22%;
+    margin-top: 18%;
 }
 
     
@@ -174,21 +174,27 @@
         
 
     }
-    .card-wrapper.cart .million > a {
-        background-color: red;
-        width: 60em;
+    .cart .million > a {
+        background-color:;
+        top: .9em;
+        position: relative;
+    }
+      .miv > img {
+        margin-top: 1em;
+        
+
     }
 
 
-    .card-wrapper .cart > img {
-        display: none;
+     .cart > img {
+       margin-top: 2em;
     }
 .hero__detail > p{
     margin-left: 5em;
 }
 
 .card-wrapper > img{
-    display: none;
+    display: none
 }
     .hero__de{
         max-width: 100%;
@@ -206,3 +212,220 @@
 
 }
 
+
+@media (max-width:600px){
+    .toggle_menu{
+        display:block;
+        font-size: 3.0rem;
+        color: white;
+        position: relative;
+        right: 10em;
+    
+    
+    
+
+    }
+    .toggle_menu > img{
+        background-color: white;
+        color:azure;
+        display: flex;
+    }
+    .nav{
+        justify-content: space-between;
+        
+    }
+
+    /* .nav__menu-list{
+        display: none;
+        
+    } */
+
+    .nav__menu{
+        width: auto;
+        flex: 0;
+        position: absolute;
+        top: -90vh;
+        left:50%;
+        transform: translateX(-50%);
+        /* display: none; */
+    }
+
+    .nav_open{
+        padding: 6em 2em;
+        background-color:  #18152A;;
+        width: 100%;
+        top: 6em;
+        border-radius: .8em;
+        margin-right: 1%;
+    
+        
+
+    }
+
+    .nav_open>.nav__menu-list{
+        flex-direction: column;
+        margin-right: 50vw;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .nav_open>.nav__menu-list > a:nth-child(1){
+        
+    }
+
+    .nav_open>.nav__menu-list > li:nth-child(4)::before{
+        position: absolute;
+        top: -1em;
+        content:"";
+        width: 100%;
+        left: 0;
+        height: .3px;
+        background-color: var(--white);
+    }
+    .nav_open>.nav__menu-list > a{
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav_open>.nav__menu-list > a{
+        font-size: 1.8rem;
+        color: var(--white);
+    }
+
+     .search-box > .grid-2{
+        grid-template-columns: 1fr;
+    }
+    .search-box > .grid-2{
+      
+    }
+    .grid-5{
+        text-align: center;
+    }
+
+    
+    
+    
+    .card{
+        text-align: center;
+    }
+
+    .card:nth-child(2), .card:nth-child(3){
+        margin-top: 3em;
+    }
+
+
+    .search-box{
+        width: 90%;
+        height: 12em;
+        bottom: -6em ;
+        background-image: url('../images/bg-shorten-mobile.svg');
+        background-position:bottom right ;
+    }
+
+    .search-box > .grid a{
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero .grid-2{
+        text-align: center;
+        justify-content: center;
+        grid-template-columns:  1fr;
+    
+        
+
+    
+    }
+
+    .hero__detail .Invest{
+        display: flex;
+        flex-direction: column;
+        gap: 1.5em;
+    
+        height: 100%;
+        width: 100%;
+        border-radius: 2em;
+    }
+    .hero__detail .Invest > a{
+        height: ;
+        text-align: center;
+        justify-content: center;
+        justify-items: center;
+        padding: 1em;
+        border-radius: 2em;
+    }
+
+.hero__detail{
+    margin-top: 18%;
+}
+
+    
+ .search-box{
+   margin-top: em;
+    background-color: red;
+    height: 10%;
+
+   }
+.card-wrapper{
+    height: 100vh;
+    justify-content: center;
+}
+
+
+    .card-wrapper .cart{
+
+        
+        position: relative;
+        
+        top: 1em;
+        left: 20%;
+        height: 38.5vh;
+        width: 60%;
+        align-content: center;
+        justify-content: center;
+        
+
+    }
+    .cart .million > a {
+        background-color:;
+        
+        margin-bottom: 1em;
+    }
+      .miv > img {
+        margin-top: .4em;
+        
+
+    }
+
+
+     .cart > img {
+       margin-top: 5em;
+    }
+.hero__detail > p{
+    margin-left: 5em;
+}
+
+.card-wrapper > img{
+    display: none
+}
+    .hero__de{
+        max-width: 100%;
+        margin-bottom: 2em;
+    }
+
+    .hero_image{
+
+    }
+
+    .card-wrapper .cart .Invest{
+        background-color: red;
+    }
+    
+
+}
+
+
+}

@@ -263,8 +263,8 @@ header{
     background-size: cover;
     background-position:right bottom ;
     background-repeat: no-repeat;
-    height: 10vh;
-    margin-top: 20em;
+    height: 1vh;
+    margin-top: 0em;
     
 }
 
@@ -307,9 +307,7 @@ header{
 }
 
 
-.card-wrapper{
-    bac;
-}
+
 
 .card-wrapper > img{
     position: absolute;
